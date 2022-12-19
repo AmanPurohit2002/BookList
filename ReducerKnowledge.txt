@@ -1,0 +1,13 @@
+#1 REDUCER FUNCTIONS 
+   it interacts with the state or the data
+
+EXAMPLE--reducer	(state,action)
+
+#2 ACTION OBJECT
+   EXAMPLE-{type:'ADD_BOOK'}
+   Action object -which describes the type of change which we want inside the reducer function which 
+   changes/interacts with the state/data 
+#2.1 PAYLOAD --second parameter in the action object which contains the actual data 
+
+#3 DISPATCH FUNCTION
+   which send the data/action object /type of change to the reducer function.

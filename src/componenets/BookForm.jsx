@@ -15,6 +15,8 @@ export const BookForm=()=>{
         setAuthor('');
     }
 
+    const disable=title.length ===0 && author.length===0;
+
     return (
         <form onSubmit={handleSubmit}>
             <input type='text' value={title} placeholder='book title'  
@@ -23,7 +25,7 @@ export const BookForm=()=>{
             <input type='text' value={author} placeholder='book author'  
                 onChange={(e)=>(setAuthor(e.target.value))}
             />
-            <input type='submit' value='add book' />
+            <button disabled={disable}>Add book</button>
         </form>
     )
 }
